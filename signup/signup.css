@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(213, 222, 245) !important;
+    margin: 0 !important;
+  }
+  
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .loginImgDiv {
+    max-width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loginImg {
+    margin: 3rem ;
+    max-width:70%;
+  }
+  .formContainer {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+  }
+  /* .customMargin {
+    margin-right: 0 !important;
+  } */
+  div.container{
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .label{
+    font-weight:80;
+  }
+  .btn-sign-up{
+    background-color:rgb(146, 39, 125);
+    color:white;
+    border-radius:10px;
+    width: 200px;
+  }
+  
