@@ -1,0 +1,10 @@
+*{
+    background-color: azure;
+    /* padding: .5rem; */
+}
+.loginImg{
+    padding: .5rem;
+    width: 30%;
+    margin: 3rem 1rem 2rem 4rem;
+
+}
