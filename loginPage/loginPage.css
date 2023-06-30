@@ -1,10 +1,35 @@
-*{
-    background-color: azure;
-    /* padding: .5rem; */
-}
-.loginImg{
-    padding: .5rem;
-    width: 30%;
-    margin: 3rem 1rem 2rem 4rem;
-
-}
+body {
+    background-color: rgb(213, 222, 245) !important;
+    margin: 0 !important;
+  }
+  
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .loginImgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loginImg {
+    margin: 3rem ;
+    max-width: 70%;
+    height: auto;
+  }
+  .formContainer {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+  }
+  /* .customMargin {
+    margin-right: 0 !important;
+  } */
+  div.container{
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  
