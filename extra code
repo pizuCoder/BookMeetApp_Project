@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg" style="background-color:rgb(98, 155, 212); ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="homepage.html"><img src="logo.png" height="80px;" width="150px" alt=""></a>
+        <button class="navbar-toggler button_class" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="right-drop">
+                
+              </div>
+              <div class="right-drop">
+              <div class="drop-1">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Username</strong> 
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end"> <!-- Modified class here -->
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Booking History</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        
+                    </ul>
+                </li>
+            </div>
+               
+                <div class="drop-2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <strong>Menu</strong>  
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end"> <!-- Modified class here -->
+                            <li><a class="dropdown-item" href="#">Home</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                        </ul>
+                    </li>
+                </div>
+              </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="nav_bar">
+        <div class="user one">
+        </div>  
+    </div>

@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>dropdown Menu</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo"><a href="#"><img src="logo.png" height="60px" alt="logo"></a></span></h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        
+       
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#"> Username<i class="fas fa-caret-down"></i></a>
+
+         <div class="dropdown-menu">
+             <ul>
+               <li><a href="#">Profile</a></li>
+               <li><a href="#">Booking History</a></li>
+
+               <li>
+                 <a href="#">Logout</a>
+                 
+                
+               </li>
+               
+             </ul>
+           </div>
+     </li>
+      </ul>
+    </div>
+
+    <table>
+    <div class="r1">
+    <button id="room1" onclick="openBookingPage()">
+        <span class="replies">Nalanda</span>
+        <span class="comment">Capacity:25</span>
+    </button>
+    <button class="room">
+      <span class="replies">Room-2</span>
+      <span class="comment">Capacity:25</span>
+    </button>
+    <button class="room">
+      <span class="replies">Room-3</span>
+      <span class="comment">Capacity:25</span>
+    </button>
+    </div>
+    <div class="r2">
+      <button class="room">
+        <span class="replies">Room-4</span>
+        <span class="comment">Capacity:25</span>
+    </button>
+    <button class="room">
+      <span class="replies">Room-5</span>
+      <span class="comment">Capacity:25</span>
+    </button>
+    <button class="room">
+      <span class="replies">Room-6</span>
+      <span class="comment">Capacity:25</span>
+    </button>
+
+    </div>
+    <div class="r3">
+      <button>
+        <span class="replies">Room-7</span>
+        <span class="comment">Capacity:25</span>
+    </button>
+    <button onclick="openBookingPage()">
+      <span class="replies">Room-8</span>
+      <span class="comment">Capacity:25</span>
+    </button>
+    <button>
+      <span class="replies">Room-9</span>
+      <span class="comment">Capacity:25</span>
+    </button>
+
+    </div>
+
+  </table>
+   <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link href="style.css" rel="stylesheet" />
+    <title>Profile</title>
+    <style>
+    
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="menu-bar">
+        <h1 class="logo"><a href="#"><img src="logo.png" height="60px" alt="logo"></a></span></h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          
+         
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#"> Username<i class="fas fa-caret-down"></i></a>
+  
+           <div class="dropdown-menu">
+               <ul>
+                 <li><a href="#">Profile</a></li>
+                 <li><a href="#">Booking History</a></li>
+  
+                 <li>
+                   <a href="#">Logout</a>
+                   
+                  
+                 </li>
+                 
+               </ul>
+             </div>
+       </li>
+        </ul>
+      </div>
+
+    
+
+
+
+
+    <div class="content">
+    <button type="button" class="btn btn-primary btn-lg" onclick="call_popup()"> Edit Profile </button><br><br>
+    <table>
+        <tbody>
+            <tr>
+                <td class="names">Name</td>
+                <td> : </td>
+                <td>John Doe</td>
+                
+            </tr>
+            <tr>
+                <td class="names">organisation</td>
+                <td> : </td>
+                <td>Ttec</td>
+                
+            </tr>
+            <tr>
+                <td class="names">Email</td>
+                <td> : </td>
+                <td>johndoe@ttec.com</td>
+                
+            </tr>
+            <tr>
+                <td class="names">Designation</td>
+                <td> : </td>
+                <td>Devloper</td>
+                
+            </tr>
+            <tr>
+                <td class="names">Password</td>
+                <td> : </td>
+                <td>*************</td>
+                
+            </tr>
+        </tbody>
+    </table><br>
+    
+
+    <button type="button" class="btn btn-primary btn-lg"><a href="#" > Change Password</a></button>
+    <br><br>
+    
+    <form action="#" id="popup_change">
+        
+        
+        <br>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+          <br><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+    
+        <label for="org">Organisation</label>
+        <input type="text" name="organisation" id="org" placeholder="Enter your organisation"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address"><br><br>
+
+        <label for="desg">Designation</label>
+        <input type="text" id="desg" name="designation" placeholder="Enter your designation"><br><br>
+
+        <br>
+        <button type="button" class="btn btn-primary btn-lg" onclick="alert('Updated Successfully')"> Update</button>&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary btn-lg" > <a href="profile_page.html">Close</a> </button>
+      </form>
+
+</div>
+
+<script type="text/javascript">
+    function call_popup(){
+        document.getElementById("popup_change").style.display = "block";
+    }
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html> 

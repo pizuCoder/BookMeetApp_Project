@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Meeting</title>
+    <link rel="stylesheet" href="booking.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="menu-bar">
+        <h1 class="logo"><a href="#"><img src="logo.png" height="60px" alt="logo"></a></span></h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          
+         
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#"> Username<i class="fas fa-caret-down"></i></a>
+  
+           <div class="dropdown-menu">
+               <ul>
+                 <li><a href="#">Profile</a></li>
+                 <li><a href="#">Booking History</a></li>
+  
+                 <li>
+                   <a href="#">Logout</a>
+                   
+                  
+                 </li>
+                 
+               </ul>
+             </div>
+       </li>
+        </ul>
+      </div>
+    <header style="text-align: center; background-color: blueviolet">
+      <h1 id="Room Name">NALANDA</h1>
+    </header>
+    <div class="content">
+    <div id="container">
+      <div><b>Capacity</b></div>
+      <div><b>Feature</b></div>
+      <div><b>Feature</b></div>
+      <div><b>Feature</b></div>
+      <div><b>Feature</b></div>
+      <div><b>Feature</b></div>
+      <div><b>Feature</b></div>
+      <div><b>Feature</b></div>
+      <div><b>Feature</b></div>
+    </div>
+    <div>
+      <form>
+        <label id="Meeting Agenda">Meeting Agenda</label><br />
+        <input
+          type="text"
+          class="form-control form-control-sm"
+          style="background-color: darkgray"
+        /><br /><br />
+        <div class="row" id="DateTime">
+          <div class="col">
+            <label id="Meeting Date">Meeting Date</label><br />
+            <input
+              type="date"
+              class="form-control"
+              style="background-color: darkgray"
+            />
+          </div>
+          <div class="col">
+            <label id="Meeting Time">Meeting Time</label><br />
+            <input
+              type="time"
+              class="form-control"
+              style="background-color: darkgray"
+            /><br /><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-8 col-lg-9">
+            <label id="Add Members">Add Members</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              style="background-color: darkgray"
+            />
+          </div>
+          <div class="col">
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="height: inherit"
+            >
+              <h5>ADD</h5></button
+            ><br /><br />
+          </div>
+        </div>
+        <div>
+          <label id="Members">Members</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            style="height: max-content; background-color: darkgray"
+          /><br /><br />
+        </div>
+        <div style="text-align: center">
+          <button type="button" class="btn btn-primary custom-width-button">
+            Book
+          </button>
+        </div>
+      </form>
+    </div>
+</div>
+  </body>
+</html>
