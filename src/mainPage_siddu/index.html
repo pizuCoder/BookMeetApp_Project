@@ -7,6 +7,7 @@
     <title>dropdown Menu</title>
   </head>
   <body>
+    
     <div class="menu-bar">
       <h1 class="logo"><a href="#"><img src="logo.png" height="60px" alt="logo"></a></span></h1>
       <ul>
@@ -36,44 +37,44 @@
 
     <table>
     <div class="r1">
-    <button id="room1" onclick="openBookingPage()">
-        <span class="replies">Nalanda</span>
+    <button class="room" onclick="openBookingPage(this)">
+        <span class="replies" id="roomName1">Nalanda</span>
         <span class="comment">Capacity:25</span>
     </button>
-    <button class="room">
+    <button class="room" onclick="openBookingPage(this)">
       <span class="replies">Room-2</span>
       <span class="comment">Capacity:25</span>
     </button>
-    <button class="room">
+    <button class="room" onclick="openBookingPage(this)">
       <span class="replies">Room-3</span>
       <span class="comment">Capacity:25</span>
     </button>
     </div>
     <div class="r2">
-      <button class="room">
+      <button class="room" onclick="openBookingPage(this)">
         <span class="replies">Room-4</span>
         <span class="comment">Capacity:25</span>
     </button>
-    <button class="room">
+    <button class="room" onclick="openBookingPage(this)">
       <span class="replies">Room-5</span>
       <span class="comment">Capacity:25</span>
     </button>
-    <button class="room">
+    <button class="room" onclick="openBookingPage(this)">
       <span class="replies">Room-6</span>
       <span class="comment">Capacity:25</span>
     </button>
 
     </div>
     <div class="r3">
-      <button>
+      <button class="room" onclick="openBookingPage(this)">
         <span class="replies">Room-7</span>
         <span class="comment">Capacity:25</span>
     </button>
-    <button onclick="openBookingPage()">
+    <button class="room" onclick="openBookingPage(this)" >
       <span class="replies">Room-8</span>
       <span class="comment">Capacity:25</span>
     </button>
-    <button>
+    <button class="room" onclick="openBookingPage(this)">
       <span class="replies">Room-9</span>
       <span class="comment">Capacity:25</span>
     </button>
@@ -81,6 +82,10 @@
     </div>
 
   </table>
-   <script src="index.js"></script>
+   
+  
+  <script src="index.js">
+    
+  </script>
   </body>
 </html>
