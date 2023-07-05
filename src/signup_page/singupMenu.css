@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(213, 222, 245) !important;
+    margin: 0 !important;
+  }
+  
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .loginImgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loginImg {
+    margin: 3rem ;
+    max-width: 70%;
+    height: auto;
+  }
+  .formContainer {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+  }
+  /* .customMargin {
+    margin-right: 0 !important;
+  } */
+  div.container{
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .proceed{
+    width: 160px;
+    background-color: rgb(168, 58, 168);
+    text-align: center;
+  }
+  ul li{
+    margin: 200%;
+    padding: 100%;
+     position: absolute;
+     top: 25%;
+     left: 55%;
+     transform: translate(-50%,-50%);
+     margin: 0%;
+     padding: 0%;
+    
+  }
+  ul li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    background: rgb(16, 1, 18);
+    border-radius: 50%;
+    transition: .5s;
+  }
+  ul li:hover{
+    background: #a228a4;
+  }
+  ul li span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid#fff;
+    transition: .5s;
+    /* padding-top: 5px;
+    padding-left: 5px; */
+  }
+  ul li.prev span{
+    top:50%;
+    right:25%;
+    text-align:center;
+    transform: translateY(-50%)rotate(135deg);
+    border-left:none;
+     border-top: none;  
+ }
+
+     
+.ibtn{
+  background-color:white ; border-width:1px; height:50px ;width:200px;box-shadow:10px black;
+}
+
+.ibtn:hover{
+        background-color:black;
+        transition:2s;
+        
+        color:white;
+     }

@@ -1,0 +1,362 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Homepage</title>
+    <style>
+
+
+ button
+ {
+    border-radius: 8px;
+border: none;
+
+    height: 100px;
+    width: 160px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    size: 30px;
+    margin-left: 190px;
+    background-color: lightgray;
+    font-weight: bold;
+
+
+    
+ }
+ button:hover
+ {
+    background-color:black;
+    color: white;
+ }
+ a{
+  text-decoration: none;
+  color: rgb(14, 14, 14);
+ }
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: white;
+   
+  }
+  
+  .logo {
+    color: var(--color-white);
+    font-size: 30px;
+  }
+  
+  .logo span {
+    color: var(--color-primary);
+  }
+  
+  .menu-bar {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    
+  
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 15px;
+    color:white;
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color:white;
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:black;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+   
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: black;
+  }
+  
+ 
+
+  button .comment {
+    display: none;
+  }
+  
+  button:hover .replies {
+    display: none;
+  }
+  
+  button:hover .comment {
+    display: inline;
+  }
+
+
+<!--footer css code-->
+ 
+
+fa {
+
+padding: 16px;
+
+font-size: 20px;
+
+width: 20px;
+
+text-align: center;
+
+text-decoration: none;
+
+margin: 5px 2px;
+
+}
+
+
+
+
+.fa:hover {
+
+ opacity: 0.7;
+
+}
+
+
+
+
+.fa-facebook,.fa-twitter,.fa-linkedin,.fa-instagram
+
+{
+
+ 
+
+border-radius:50%;
+
+ color: rgb(0, 0, 0);
+
+}
+
+.first{
+
+  text-align: left;
+
+  margin-left: 20px;
+
+}
+
+.middle{
+
+  text-align: center;
+
+}
+
+.last{
+
+  text-align: right;
+
+  margin-right: 30px;
+
+}
+
+.main
+
+{
+
+  display: flex;
+
+  width:100%;
+
+  justify-content: space-between;
+
+  background-color:black;
+  color:white;
+  font-size:15px;
+  padding-top: 10px;;
+  bottom:0px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo"><a href="homepage.html"><img src="https://companieslogo.com/img/orig/TTEC_BIG.D-29428955.png?t=1674882738" height="60px" alt="logo"></a></span></h1>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="#"> Username<i class="fas fa-caret-down"></i></a>
+         <div class="dropdown-menu">
+             <ul>
+               <li><a href="profile_page.html">Profile</a></li>
+               <li><a href="History.html">Booking History</a></li>
+               <li>
+                 <a href="#">Logout</a>
+               </li>   
+             </ul>
+           </div>
+     </li>
+      </ul>
+    </div>
+    <table>
+<div class="r1" onclick="openBookingPage()">
+  <button>
+    <span class="replies" >Nalanda</span>
+    <span class="comment">Capacity:25</span>
+</button>
+<button>
+  <span class="replies">Nalanda</span>
+  <span class="comment">Capacity:25</span>
+</button>
+<button>
+  <span class="replies">Nalanda</span>
+  <span class="comment">Capacity:25</span>
+</button>
+</div>
+<div class="r2">
+  <button>
+    <span class="replies">Nalanda</span>
+    <span class="comment">Capacity:25</span>
+</button>
+<button>
+  <span class="replies">Nalanda</span>
+  <span class="comment">Capacity:25</span>
+</button>
+<button>
+  <span class="replies">Nalanda</span>
+  <span class="comment">Capacity:25</span>
+</button>
+
+</div>
+<div class="r3">
+  <button>
+    <span class="replies">Nalanda</span>
+    <span class="comment">Capacity:25</span>
+</button>
+<button>
+  <span class="replies">Nalanda</span>
+  <span class="comment">Capacity:25</span>
+</button>
+<button>
+  <span class="replies">Nalanda</span>
+  <span class="comment">Capacity:25</span>
+</button>
+
+</div>
+
+    </table>
+    <div class="main">
+
+      <div class="first">
+
+        <h3 style="font-size:16px;"> Address:</h3>
+
+        <p>
+
+           The Skyview 20<br>
+
+          10th Floor, North Tower,<br> Hitech City Main Rd,Hyderabad, <br>Telangana-500081.
+
+        </p>
+
+      </div>
+
+   
+
+    <div class="middle">
+
+      <div class="contact-details">      
+
+        <h3 style="font-size:16px;">Contact Number:</h3>
+
+        <a href="tel:04042613064">040 4261 3064</a>
+
+      </div>
+
+      <div class="icons">
+
+        <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+
+        <a href="https://www.fa-instagram.com" class="fa fa-instagram" target="_blank"></a>
+
+        <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+
+        <a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+
+      </div>
+
+    </div>
+
+    <div class="last">
+
+     
+
+        <h3>Mail:</h3>
+
+        <a href="mailto:contact@ttec.com" >contact@ttec.com</a>
+
+     
+
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+  </body>
+</html>

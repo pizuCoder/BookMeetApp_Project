@@ -1,0 +1,12 @@
+{
+    "name": "book-meet-appn",
+    "version": "1.0.0",
+    "description": "Description of your project",
+    "scripts": {
+      "start": "node History.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
+  }
+  

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+
+
+        /* Nav Bar css started*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menu-bar {
+            background-color: rgb(178, 109, 65);
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            position: relative;
+        }
+  
+        .menu-bar ul {
+            list-style: none;
+            display: flex;
+        }
+  
+        .menu-bar ul li {
+            padding: 10px 30px;
+            position: relative;
+        }
+  
+        .menu-bar ul li a {
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+  
+            transition: all 0.3s;
+        }
+  
+        .menu-bar ul li a:hover {
+            color: rgb(0, 0, 0) !important;
+        }
+  
+        .fas {
+            float: right;
+            margin-left: 10px;
+            padding-top: 3px;
+        }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(178, 109, 65);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+   
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: black;
+  }
+
+
+
+
+
+
+        *{
+            padding: 0;
+            margin:0;
+        }
+        a{
+              color:white !important;
+              text-decoration: none !important;
+            }
+        .content
+        {
+            margin-top: 30px;
+            padding-left: 30px;
+       }
+
+        .user 
+        {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            float:right;        
+        }
+
+        .one 
+        {
+        background-image: url(https://cdn-icons-png.flaticon.com/512/149/149071.png);
+        }
+        .btn 
+        {       
+            /*background-image: linear-gradient(rgb(93, 93, 173),rgb(192, 81, 133));*/
+            background-color:rgb(0,85,104) ;
+            background-color: black !important;
+            width: auto;
+            height:45px;
+        }
+        table 
+        {
+            border: none;
+            height: 170px;
+            width: 80%;
+        }
+        .names
+        {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        td
+        {
+            font-size: 18px;
+        }
+        .content a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        input 
+        {
+            width: auto;
+            padding: 12px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin: .8em auto;
+        }
+        #popup_change
+        {
+            display:none;
+            border: 3px solid rgb(0, 0, 0); 
+            padding: 2em;
+            width: 400px;
+            text-align: center;
+            background: #fff;
+            position:fixed;
+            top:55%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%)
+        }
+        label
+        {
+            font-weight: bold;
+        }
+        .btn-close
+        {
+            float:right;
+        }
+        .right-drop
+        {
+            display: flex;
+            margin-left: 420px;
+        }
+        .button_class
+        {
+            color: rgb(255, 255, 255);
+            height: 150px;
+            width: 250px;
+            background-color:rgb(16, 53, 78);
+            border: 1px solid whitesmoke
+        }
+        .button_class:hover
+        {
+            color: rgb(0, 0, 0);
+            background-color: rgb(227, 227, 227);
+        }
+
+
+
+        
+/* footer css */
+            *
+            {
+            padding:2px 0;
+            margin: 0;
+            }
+          .fa {
+            padding: 16px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            }
+
+            .fa:hover {
+             opacity: 0.7;
+            }
+
+            .fa-facebook,.fa-twitter,.fa-linkedin,.fa-instagram
+            {
+             
+            border-radius:50%;
+             color: rgb(255, 255, 255);
+            }
+            .first{
+              text-align: left;
+              margin-left: 20px;
+            }
+            .middle{
+              text-align: center;
+            }
+            .last{
+              text-align: right;
+              margin-right: 30px;
+            }
+            .main
+            {
+              display: flex;
+              width:100%;
+              justify-content: space-between;
+              background-color: rgb(0, 0, 0);
+              color:white;
+              font-size:15px;
+              
+              bottom:0px;
+              
+            }
+            
+
+/* footer css end*/
+
+
+    </style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!--styles for navbar-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Nav Bar Started--> 
+    <div class="menu-bar">
+        <h1 class="logo"><a href="">
+          <img src="logo.png" height="60px" alt="logo">  
+         <!--     <img src="https://www.gtaweekly.ca/wp-content/uploads/2018/04/teletech_logo.jpg" height="60px" alt="logo">  -->
+        </a></span></h1>
+        <ul>
+          <li><a href="../mainPage_siddu/index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          
+         
+          
+          <li><a href="#"> Username<i class="fas fa-caret-down"></i></a>
+  
+           <div class="dropdown-menu">
+               <ul>
+                 <li><a href="new_profile_page.html">Profile</a></li>
+                 
+                 <li><a href="../someswara_contribution/History.html">Booking History</a></li>
+  
+                 <li>
+                   <a href="#">Logout</a>
+                   
+                  
+                 </li>
+                 
+               </ul>
+             </div>
+       </li>
+        </ul>
+      </div>
+<!--Nav Bar Ended-->  
+    <br>
+    <!--for user image-->
+    <div class="user one">
+    </div> 
+
+    <!--for user information-->
+    <div class="content">
+        <button type="button" class="btn btn-primary btn-lg" onclick="call_popup()"> Edit Profile </button>
+        <br><br>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="names">Name</td>
+                    <td> : </td>
+                    <td id="name">John Doe</td>
+                    
+                </tr>
+                <tr>
+                    <td class="names">organisation</td>
+                    <td> : </td>
+                    <td id="oname">Ttec</td>
+                    
+                </tr>
+                <tr>
+                    <td class="names">Email</td>
+                    <td> : </td>
+                    <td id="eml">johndoe@ttec.com</td>
+                    
+                </tr>
+                <tr>
+                    <td class="names">Designation</td>
+                    <td> : </td>
+                    <td id="dg">Devloper</td>
+                    
+                </tr>
+                <tr>
+                    <td class="names">Password</td>
+                    <td> : </td>
+                    <td >*************</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg">
+            <a href="#" > Change Password</a>
+        </button>
+        <br><br>
+
+
+        <!--for changing information pop up-->
+        <form action="#" id="popup_change">
+        
+        
+            <br>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+              <br><br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+        
+            <label for="org">Organisation</label>
+            <input type="text" name="organisation" id="org" placeholder="Enter your organisation"><br><br>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email"   name="email" placeholder="Enter your email address"  type="email" pattern=".+@\.com"><br><br>
+          
+            <label for="desg">Designation</label>
+            <input type="text" id="desg" name="designation" placeholder="Enter your designation"><br><br>
+    
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" onclick="update(this.form)"> Update</button>&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-primary btn-lg" onclick="closeit()" > Close</button>
+          </form>
+    </div>
+    
+
+<!--Footer-->
+    <div class="main">
+        <div class="first">
+          <h3 style="font-size:16px;"> Address:</h3>
+          <p>
+             The Skyview 20<br>
+            10th Floor, North Tower,<br> Hitech City Main Rd,Hyderabad, <br>Telangana-500081.
+          </p>
+        </div>
+      
+      <div class="middle">
+        <div cl=ass="contact-details">      
+          <h3 style="font-size:16px;">Contact Number:</h3>
+          <a href="tel:04042613064">040 4261 3064</a>
+        </div>
+        <div class="icons">
+          <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+          <a href="https://www.fa-instagram.com" class="fa fa-instagram" target="_blank"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+          <a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+        </div>
+      </div>
+      <div class="last">
+        
+          <h3>Mail:</h3>
+          <a href="mailto:contact@ttec.com" >contact@ttec.com</a>
+        
+      </div>
+    </div>  
+    
+
+
+
+
+    <script type="text/javascript">
+        function call_popup(){
+            document.getElementById("popup_change").style.display = "block";
+        }
+       function closeit()
+       {
+        document.getElementById("popup_change").style.display = "none";
+       }
+
+        function update(form)
+      {  var fn="john",ln="Doe",org="ttec",desg="developer",em="johndoe@ttec.com"; 
+        const arr={
+         fname:fn,
+         lname:ln,
+         email:em,
+         org:org,
+         desg:desg
+      }
+      arr.fname=form.fname.value;
+      arr.lname=form.lname.value;
+      arr.email=form.email.value;
+        arr.desg=form.desg.value;
+        arr.org=form.org.value;
+        if(form.fname.value=="" || form.lname.value=="" || form.email.value=="" || form.desg.value=="" || form.org.value=="")
+        {
+          alert("enter all values");
+        }
+        
+        else{
+        document.getElementById("name").innerHTML=arr.fname+arr.lname;
+        document.getElementById("oname").innerText=arr.org;
+        document.getElementById("eml").innerText=arr.email;
+        document.getElementById("dg").innerText=arr.desg;
+       alert("update succesfully");
+       document.getElementById("popup_change").style.display = "none";
+        }
+      }
+    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+</body>
+</html>

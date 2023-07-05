@@ -4,3 +4,5 @@ const urlParams = new URLSearchParams(window.location.search);
   // Set the room name as the content of the h1 element with id "roomName"
   const roomNameElement = document.getElementById("roomName");
   roomNameElement.innerHTML = bookingName;
+
+  

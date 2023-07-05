@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Aboutus</title>
+<style>
+
+  
+
+  
+  
+.menu-bar {
+    background-color:  rgb(178, 109, 65);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    
+  
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: rgb(59, 39, 186);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:  rgb(178, 109, 65);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: black;
+  }
+  
+  
+
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+
+margin: 0;
+
+}
+
+ 
+
+html {
+
+box-sizing: border-box;
+
+}
+
+
+ 
+
+*, *:before, *:after {
+
+padding:0;
+
+margin:0;
+
+box-sizing:border-box;
+
+}
+
+ 
+
+.column {
+
+float: left;
+
+width: 33.3%;
+
+margin-bottom: 16px;
+
+padding: 0 8px;
+
+}
+
+ 
+
+.card {
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+margin: 4px;
+
+}
+
+ 
+
+.about-section {
+
+padding:30px;
+
+text-align: center;
+
+background-color: rgb(0, 85, 104);
+
+color: white;
+
+}
+
+h2{
+
+text-align: center;
+
+}
+
+ 
+
+.container {
+
+padding: 0 16px;
+
+}
+
+.card {
+
+padding : 60px;
+
+transition: transform .8s;
+
+width: 300px;
+
+height: 400px;
+
+margin: 0 auto;
+
+font-size: 14px;
+
+}
+
+.card:hover{
+
+
+
+transform: scale(1.1);
+
+font-size: 15px;
+
+}
+
+.container::after, .row::after {
+
+content: "";
+
+clear: both;
+
+display: table;
+
+}
+
+ 
+
+.title {
+
+color: rgb(0, 85, 104);
+
+}
+
+ 
+
+.button {
+
+border: none;
+
+outline: 0;
+
+display: inline-block;
+
+padding: 8px;
+
+color: white;
+
+background-color: #000;
+
+text-align: center;
+
+cursor: pointer;
+
+width: 100%;
+
+}
+
+.button:hover {
+
+background-color: #555;
+
+}
+
+ 
+
+@media screen and (max-width: 800px) {
+
+.column {
+
+width: 100%;
+
+display: block;
+
+}
+
+}
+
+*{
+
+padding:3px 0;
+
+margin: 0;
+
+}
+
+.fa {
+
+padding: 16px;
+
+font-size: 20px;
+
+width: 20px;
+
+text-align: center;
+
+text-decoration: none;
+
+margin: 5px 2px;
+
+}
+
+.fa:hover {
+
+opacity: 0.7;
+
+}
+
+.fa-facebook,.fa-twitter,.fa-linkedin,.fa-instagram
+
+{
+
+ 
+
+border-radius:50%;
+
+color: rgb(255, 255, 255);
+
+}
+
+.first{
+
+text-align: left;
+
+margin-left: 20px;
+
+}
+
+.middle{
+
+text-align: center;
+
+}
+
+.last{
+
+text-align: right;
+
+margin-right: 30px;
+
+}
+
+.main
+
+{
+
+display: flex;
+
+width:100%;
+
+justify-content: space-between;
+
+background-color: rgb(0, 85, 104);
+
+color:white;
+
+font-size:15px;
+
+ 
+
+bottom:0px;
+
+ 
+
+}
+
+a{
+
+color:white;
+
+text-decoration: none;;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+ 
+
+<body>
+
+  <div class="menu-bar">
+    <h1 class="logo"><a href="">
+      <img src="../Profile_page_prY/logo.png" height="60px" alt="logo">  
+     <!--     <img src="https://www.gtaweekly.ca/wp-content/uploads/2018/04/teletech_logo.jpg" height="60px" alt="logo">  -->
+    </a></span></h1>
+    <ul>
+      <li><a href="../mainPage_siddu/index.html">Home</a></li>
+      <li><a href="../Profile_page_prY/aboutus.html">About Us</a></li>
+      
+     
+      
+      <li><a href="#"> Username<i class="fas fa-caret-down"></i></a>
+
+       <div class="dropdown-menu">
+           <ul>
+             <li><a href="../Profile_page_prY/new_profile_page.html">Profile</a></li>
+             
+             <li><a href="../someswara_contribution/History.html">Booking History</a></li>
+
+             <li>
+               <a href="#">Logout</a>
+               
+              
+             </li>
+             
+           </ul>
+         </div>
+   </li>
+    </ul>
+  </div>
+<div class="about-section">
+
+<h1><b>About Us</b> </h1>
+
+<p>OUR VALUES</p>
+
+<p>Lead every day |Do the right thing | Reach for amazing </p>
+
+<p>Live life passionately |Seek first to understand | Act as one </p>
+
+ 
+
+</div>
+
+ 
+
+<div class="row">
+
+<div class="column">
+
+<div class="card">
+
+<img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:120%">
+
+<div class="container">
+
+<h2>Purpose</h2>
+
+ 
+
+<p>Deliver humanity to business</p>
+
+</div>
+
+</div>
+
+</div>
+
+ 
+
+<div class="column">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=841&q=80" style="width:120%">
+
+<div class="container">
+
+<h2>Vision</h2>
+
+<p>Leading the world's most respected organizations to create and grow emotionally connected, valuable, lasting relationships..</p>
+
+</div>
+
+</div>
+
+</div>
+
+ 
+
+<div class="column">
+
+<div class="card">
+
+<img src="https://images.pexels.com/photos/260928/pexels-photo-260928.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="John" style="width:120%">
+
+<div class="container">
+
+<h2>Mission</h2>
+
+<p>Accelerate growth by simplifying and personalizing interactions that build deep engagement between people and brands.</p>
+
+ 
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="main">
+
+<div class="first">
+
+<h3 style="font-size:16px;"> Address:</h3>
+
+<p>
+
+The Skyview 20<br>
+
+10th Floor, North Tower,<br> Hitech City Main Rd,Hyderabad, <br>Telangana-500081.
+
+</p>
+
+</div>
+
+ 
+
+<div class="middle">
+
+<div class="contact-details">
+
+<h3 style="font-size:16px;">Contact Number:</h3>
+
+<a href="tel:04042613064">040 4261 3064</a>
+
+</div>
+
+<div class="icons">
+
+<a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+
+<a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+
+<a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+
+<a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+
+</div>
+
+</div>
+
+<div class="last">
+
+ 
+
+<h3>Mail:</h3>
+
+<a href="mailto:contact@ttec.com" >contact@ttec.com</a>
+
+ 
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>

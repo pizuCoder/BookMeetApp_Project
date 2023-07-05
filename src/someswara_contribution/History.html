@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking History</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+           * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  
+  
+  
+  .menu-bar {
+    background-color: rgb(178, 109, 65);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    
+  
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color:whitesmoke;
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+   
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: rgb(178, 109, 65);
+  }
+        th,td{
+          padding: 0px;
+            text-align: center;
+            font-size: larger; 
+            border-color: white;
+            background-color: #eeee;
+        }
+        tr:hover {background-color: rgba(39, 26, 220, 0.943);}
+        th{
+          border: 0.5em solid;
+          border-color:white;
+        }
+        td{
+          border-left:0.5em solid white;
+          border-right: white;
+        }
+        tbody{
+          border: 0.5em;
+          border-color: white;
+        }
+        table{
+         
+          width:100%;
+          border-collapse: collapse;
+        }
+<!--footer style-->
+.fa {
+
+padding: 0  px;
+
+font-size: 20px;
+
+width: 20px;
+
+text-align: center;
+
+text-decoration: none;
+
+margin: 5px 2px;
+
+}
+
+
+
+
+.fa:hover {
+
+ opacity: 0.7;
+
+}
+
+
+
+
+.fa-facebook,.fa-twitter,.fa-linkedin,.fa-instagram
+
+{
+
+ 
+
+border-radius:50%;
+
+ color: rgb(255, 255, 255);
+
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.first{
+
+  text-align: left;
+
+  margin-left: 20px;
+
+}
+
+.middle{
+
+  text-align: center;
+
+}
+
+.last{
+
+  text-align: right;
+
+  margin-right: 30px;
+
+}
+
+.main
+
+{
+
+  display: flex;
+
+width:100%;
+
+justify-content: space-between;
+
+background-color:rgb(178, 109, 65);;
+color:white;
+font-size:15px;
+
+padding-bottom: 10px;
+bottom:0px;
+position: fixed;
+
+ 
+
+}
+
+
+
+    </style>
+</head>
+<body>
+  <div class="menu-bar">
+    <h1 class="logo"><a href="">
+      <img src="../Profile_page_prY/logo.png" height="60px" alt="logo">  
+     <!--     <img src="https://www.gtaweekly.ca/wp-content/uploads/2018/04/teletech_logo.jpg" height="60px" alt="logo">  -->
+    </a></span></h1>
+    <ul>
+      <li><a href="../mainPage_siddu/index.html">Home</a></li>
+      <li><a href="../Profile_page_prY/aboutus.html">About Us</a></li>
+      
+     
+      
+      <li><a href="#"> Username<i class="fas fa-caret-down"></i></a>
+
+       <div class="dropdown-menu">
+           <ul>
+             <li><a href="../Profile_page_prY/new_profile_page.html">Profile</a></li>
+             
+             <li><a href="../someswara_contribution/History.html">Booking History</a></li>
+
+             <li>
+               <a href="#">Logout</a>
+               
+              
+             </li>
+             
+           </ul>
+         </div>
+   </li>
+    </ul>
+  </div>
+    <h1 style="text-align: center; padding-top: 5%;">Booking History</h1>
+    <div class="responsive">
+    <table class="table ">
+        <thead sty >
+            <tr>
+                <th >S.No</th>
+                <th >Room name</th>
+                <th >Date booked</th>
+                <th >Time slots</th>
+                <th >Role</th>
+                <th >Actions</th>
+              </tr>
+        </thead>
+        <tbody  >
+            <tr>
+                <td >1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td >3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td >3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td >3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td >3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td >3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td >3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td >3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+        </tbody>
+    </table>
+ </div>
+ <br>
+ <br>
+ <br><br>
+ <br><br><br><br><br><br><br>
+ <footer>
+ <div class="main">
+
+  <div class="first">
+
+    <h3 style="font-size:16px;"> Address:</h3>
+
+    <p>
+
+       The Skyview 20<br>
+
+      10th Floor, North Tower,<br> Hitech City Main Rd,Hyderabad, <br>Telangana-500081.
+
+    </p>
+
+  </div>
+
+
+
+<div class="middle">
+
+  <div class="contact-details">      
+
+    <h3 style="font-size:16px;">Contact Number:</h3>
+
+    <a href="tel:04042613064">040 4261 3064</a>
+
+  </div>
+
+  <div class="icons">
+
+    <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+
+    <a href="https://www.fa-instagram.com" class="fa fa-instagram" target="_blank"></a>
+
+    <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+
+    <a href="https://www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+
+  </div>
+
+</div>
+
+<div class="last">
+
+ 
+
+    <h3>Mail:</h3>
+
+    <a href="mailto:contact@ttec.com" >contact@ttec.com</a>
+
+ 
+
+</div>
+
+</div>
+</footer>
+</body>
+</html>
